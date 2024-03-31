@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(260.82deg, #BB8BEB 15.43%, #ECA7DD 59.48%, #FFD18D 99.34%);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+}
+
+div {
+    font-size: 30px;
+}
+
+.body-centered-text {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.corner {
+    position: absolute;
+}
+.top-left { top: 0; left: 0; padding: 5%; }
+.top-right { top: 0; right: 0; padding: 5%; }
+.bottom-left { bottom: 0; left: 0; padding: 5%; }
+.bottom-right { bottom: 0; right: 0; padding: 5%; }
+.center-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-button, .end-button {
+    display: block;
+    position: absolute;
+}
+.back-button { left: 0; top: 20%; }
+.end-button { left: 50%; bottom: 10%; transform: translateX(-50%); }
+
