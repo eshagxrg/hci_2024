@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="6;url=stretching2.html">
     <title>Stretching</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
     <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
-    <div class="center-text" onclick="location.href='stretching2.html';">You’ve selected:<br>Stretching</div>
+    <div class="center-text" id="message" onclick="location.href='stretching2.html';">You’ve selected:<br>Stretching</div>
+
+    <script>
+        function updateMessage() {
+            document.getElementById('message').innerText = 'Let’s get started.....';
+        }
+        setTimeout(updateMessage, 3000);
+    </script>
 </body>
 </html>
