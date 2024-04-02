@@ -48,12 +48,12 @@ div {
 }
 .timer-circle-bg {
     fill: none;
-    stroke: #eee;
+    stroke: plum;
     stroke-width: 4;
 }
 .timer-circle {
     fill: none;
-    stroke: blue;
+    stroke: purple;
     stroke-width: 4;
     stroke-dasharray: 283;
     stroke-dashoffset: 283;
