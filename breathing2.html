@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="corner top-left" onclick="location.href='goodbye.html';">End Activity</div>
-    <div class="corner top-right">Timer</div>
+    <div class="corner top-right" id="timerContainer"></div>
+    <script src="circleTimer.js"></script>
+    <script>
+        createCircleTimer(60, '#timerContainer');
+    </script>
     <div class="center-text">Follow this animation and breathe along...</div>
 </body>
 </html>
