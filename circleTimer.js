@@ -2,9 +2,9 @@ function createCircleTimer(duration, selector) {
     const container = document.querySelector(selector);
     container.innerHTML = `
         <svg class="timer-svg" style="transform: rotate(-90deg); width: 100px; height: 100px;">
-            <circle class="timer-circle-bg" cx="50" cy="50" r="45" style="fill: none; stroke: #eee; stroke-width: 4;"></circle>
-            <circle class="timer-circle" cx="50" cy="50" r="45" style="fill: none; stroke: purple; stroke-width: 4; stroke-dasharray: 283; stroke-dashoffset: 283;"></circle>
-            <text class="timer-text" x="50" y="55" text-anchor="middle" style="fill: black; font-size: 20px; font-family: Arial; transform: rotate(90deg); transform-origin: 50px 50px;">60</text>
+            <circle class="timer-circle-bg" cx="50" cy="50" r="45" style="fill: none; stroke: plum; stroke-width: 6;"></circle>
+            <circle class="timer-circle" cx="50" cy="50" r="45" style="fill: none; stroke: #5216A1; stroke-width: 6; stroke-dasharray: 283; stroke-dashoffset: 283;"></circle>
+            <text class="timer-text" x="50" y="55" text-anchor="middle" style="fill: #5216A1; font-size: 25px; font-family: 'Fredoka'; font-color: #5216A1; transform: rotate(90deg); transform-origin: 50px 50px;">60</text>
         </svg>
     `;
 
