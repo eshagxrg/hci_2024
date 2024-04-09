@@ -19,9 +19,9 @@ var sp2tx = {
         if (text === "Surprise Me") {
           surpriseMe();
         } else if (text === "Guided breathing.") {
-          window.location.href = "breathing.html"; // Replace with your actual file name
+          window.location.href = "breathing.html"; 
         } else if (text === "Mindfulness activity.") {
-          window.location.href = "mindfulness.html"; // Replace with your actual file name
+          window.location.href = "mindfulness.html"; 
         } else if (text === "Stretching") {
           window.location.href = "stretching.html";
         } else {
@@ -34,13 +34,12 @@ var sp2tx = {
 
 
 function surpriseMe() {
-  const randomNumber = Math.random(); // Generate a random number between 0 and 1
+  const randomNumber = Math.random(); 
 
   if (randomNumber <= 1/3) {
-    window.location.href = "breathing.html"; // Replace with your actual file name
+    window.location.href = "breathing.html"; 
   } else if (randomNumber <= 2/3) {
-    window.location.href = "mindfulness.html"; // Replace with your actual file name
+    window.location.href = "mindfulness.html"; 
   } else {
-    window.location.href = "stretching.html"; // Replace with your actual file name
-  }
+    window.location.href = "stretching.html"; 
 }
