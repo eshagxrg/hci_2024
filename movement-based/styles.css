@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+    background: linear-gradient(260.82deg, #BB8BEB 15.43%, #ECA7DD 59.48%, #FFD18D 99.34%);
+    font-family: 'Fredoka';
+    color: #5216A1;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Fredoka';
+    color: #5216A1;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Fredoka';
+    color: #5216A1;
+}
+
+div {
+    font-size: 30px;
+    font-family: 'Fredoka';
+    color: #5216A1;
+}
+
+.body-centered-text {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.corner {
+    position: absolute;
+}
+.top-left { top: 0; left: 0; padding: 5%; }
+.top-right { top: 0; right: 0; padding: 5%; }
+.bottom-left { bottom: 0; left: 0; padding: 5%; }
+.bottom-right { bottom: 0; right: 0; padding: 5%; }
+.center-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-button, .end-button {
+    display: block;
+    position: absolute;
+}
+.back-button { left: 0; top: 20%; }
+.end-button { left: 50%; bottom: 10%; transform: translateX(-50%); }
+
+.timer-svg {
+    transform: rotate(-90deg);
+    width: 100px;
+    height: 100px;
+}
+.timer-circle-bg {
+    fill: none;
+    stroke: plum;
+    stroke-width: 4;
+}
+.timer-circle {
+    fill: none;
+    stroke: purple;
+    stroke-width: 4;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+}
