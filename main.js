@@ -42,4 +42,21 @@ function surpriseMe() {
     window.location.href = "mindfulness.html"; 
   } else {
     window.location.href = "stretching.html"; 
+  }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const gifs = ["images/stretch2.gif", "images/stretch3.gif", "images/stretch4.gif"];
+  let currentGifIndex = 0;
+  const gifElement = document.getElementById('stretchGif');
+
+  // Function to change the GIF
+  function changeGif() {
+      gifElement.src = gifs[currentGifIndex];
+      currentGifIndex = (currentGifIndex + 1) % gifs.length;
+  }
+
+  // Set interval to change GIF every 15 seconds
+  setInterval(changeGif, 15000);
+});
+
