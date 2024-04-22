@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<div id="stretchingPage" style="display: none;">
+    <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
+    <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
+    <div class="center-text" id="stretchingMessage" onclick="location.href='stretching2.html';">You’ve selected:<br>Stretching</div>
+    <script>
+        function updateStretchingMessage() {
+            document.getElementById('stretchingMessage').innerText = 'Let’s get started.....';
+        }
+        setTimeout(updateStretchingMessage, 3000);
+    </script>
+</div>
