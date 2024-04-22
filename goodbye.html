@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5;url=index.html">
+    <meta http-equiv="refresh" content="9;url=index.html">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <title>Goodbye Page</title>
@@ -11,7 +11,10 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body class="body-centered-text">
-    <h1>Yay, you did it!!!</h1>
-    <p>Have a great day,<br>come back anytime!</p>
+    <h1 id="congratulationMessage">Yay, you did it!!!</h1>
+    <p id="farewellMessage">Have a great day,<br>come back anytime!</p>
+    <div id="qrCodeContainer" style="display: none;">
+        <img id="qrCode" src="images/hci_feedback_qr.png" alt="QR Code">
+    </div>
 </body>
 </html>

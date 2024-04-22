@@ -75,3 +75,16 @@ div {
     stroke-dasharray: 283;
     stroke-dashoffset: 283;
 }
+
+#breathGif {
+    margin-top: 20vh;
+    height: 70vh;
+    width: auto;
+    max-width: 100%;
+}
+
+#qrCode {
+    height: 25vh;
+    width: auto;
+    max-width: 100%;
+}

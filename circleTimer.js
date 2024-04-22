@@ -26,5 +26,7 @@ function createCircleTimer(duration, selector) {
         timeLeft--;
     };
 
+    updateTimer();
+
     let intervalId = setInterval(updateTimer, 1000);
 }

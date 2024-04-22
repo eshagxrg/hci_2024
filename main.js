@@ -46,7 +46,8 @@ function surpriseMe() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  const gifs = ["images/stretch2.gif", "images/stretch3.gif", "images/stretch4.gif"];
+  const gifs = ["images/gif2.gif", "images/gif3.gif", "images/gif4.gif"];
+  //const gifs = ["images/stretch2.gif", "images/stretch3.gif", "images/stretch4.gif"];
   let currentGifIndex = 0;
   const gifElement = document.getElementById('stretchGif');
 
@@ -60,3 +61,28 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(changeGif, 15000);
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all messages
+  const messages = document.querySelectorAll('.message');
+  
+  // Hide all messages initially
+  messages.forEach(message => {
+      message.style.display = 'none';
+  });
+
+  // Randomly pick one message to display
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  messages[randomIndex].style.display = 'block';
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      // Update the text content
+      document.getElementById('congratulationMessage').textContent = 'Have Feedback?';
+      document.getElementById('farewellMessage').innerHTML = 'Scan the QR code below and let us know<br>what is working and what is not!';
+
+      // Display the QR code
+      document.getElementById('qrCodeContainer').style.display = 'block';
+  }, 3000); // 3000 milliseconds = 3 seconds
+});
