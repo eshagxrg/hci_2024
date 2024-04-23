@@ -32,9 +32,27 @@ div {
 .corner {
     position: absolute;
 }
-.top-left { top: 0; left: 0; padding: 5%; }
-.top-right { top: 0; right: 0; padding: 5%; }
-.bottom-left { bottom: 0; left: 0; padding: 5%; }
+.top-left { 
+    position: absolute; /* Adjusted from .top-left to .left */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Vertically center the content */
+    padding: 5%;
+}
+.top-right { 
+    position: absolute; /* Adjusted from .top-right to .top-center */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Horizontally center the content */
+    padding: 5%;
+}
+.bottom-left { 
+    position: absolute; /* Adjusted from .bottom-left to .right */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); /* Vertically center the content */
+    padding: 5%;
+ }
 .bottom-right { bottom: 0; right: 0; padding: 5%; }
 .center-text {
     position: absolute;
