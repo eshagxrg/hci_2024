@@ -3,16 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body class="body-centered-text">
+    <!-- Welcome Page -->
     <div id="welcomePage">
         <h1>Need a break?</h1>
         <p>Come over for a minute.</p>
         <p><br></p>
         <p>Click <a href="activityselect.html">here</a> to get started!</p>
+    </div>
+
+    <!-- Activity Selection Page -->
+    <div id="activitySelectPage" style="display: none;">
+        <div class="corner top-left" onclick="location.href='breathing.html';">Guided Breathing</div>
+        <div class="corner top-right" onclick="location.href='mindfulness.html';">Mindfulness Activity</div>
+        <div class="corner bottom-left" onclick="location.href='stretching.html';">Stretching</div>
+        <div class="corner bottom-right" onclick="location.href='goodbye.html';">Surprise Me!</div>
+        <div class="center-text">Move your hand towards an activity to select it.</div>
+    </div>
+
+    <!-- Guided Breathing Page -->
+    <div id="breathingPage" style="display: none;">
+        <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
+        <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
+        <div class="center-text" id="breathingMessage" onclick="location.href='breathing2.html';">You’ve selected:<br>Guided Breathing</div>
+        <script>
+            function updateBreathingMessage() {
+                document.getElementById('breathingMessage').innerText = 'Let’s get started.....';
+            }
+            setTimeout(updateBreathingMessage, 3000);
+        </script>
+    </div>
+
+    <!-- Guided Breathing 2 Page -->
+    <div id="breathing2Page" style="display: none;">
+        <div class="corner top-left" onclick="location.href='goodbye.html';">End Activity</div>
+        <div class="corner top-right" id="timerContainer"></div>
+        <script src="circleTimer.js"></script>
+        <script>
+            createCircleTimer(60, '#timerContainer');
+        </script>
+        <div id="gifContainer" class="center-text">
+            <img id="breathGif" src="images/breathewithtext.gif" alt="Breathing GIF">
+        </div>
+    </div>
+
+    <!-- Goodbye Page -->
+    <div id="goodbyePage" style="display: none;">
+        <h1 id="congratulationMessage">Yay, you did it!!!</h1>
+        <p id="farewellMessage">Have a great day,<br>come back anytime!</p>
+        <div id="qrCodeContainer" style="display: none;">
+            <img id="qrCode" src="images/hci_feedback_qr.png" alt="QR Code">
+        </div>
+    </div>
+
+    <!-- Mindfulness Activity Page -->
+    <div id="mindfulnessPage" style="display: none;">
+        <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
+        <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
+        <div class="center-text" id="mindfulnessMessage" onclick="location.href='mindfulness2.html';">You’ve selected:<br>Mindfulness Activity</div>
+        <script>
+            function updateMindfulnessMessage() {
+                document.getElementById('mindfulnessMessage').innerText = 'Let’s get started.....';
+            }
+            setTimeout(updateMindfulnessMessage, 3000);
+        </script>
+    </div>
+
+    <!-- Mindfulness Activity 2 Page -->
+    <div id="mindfulness2Page" style="display: none;">
+        <div class="corner top-left" onclick="location.href='goodbye.html';">End Activity</div>
+        <div class="corner top-right" id="timerContainer"></div>
+        <script src="circleTimer.js"></script>
+        <script>
+            createCircleTimer(60, '#timerContainer');
+        </script>
+        <div id="messageContainer" class="center-text">
+            <div class="message">Think about something that<br> made you smile and why...</div>
+            <div class="message">Think about somebody that<br> you are grateful for and why...</div>
+            <div class="message">Think about something that<br> you are proud of and why...</div>
+        </div>
+    </div>
+
+    <!-- Stretching Page -->
+    <div id="stretchingPage" style="display: none;">
+        <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
+        <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
+        <div class="center-text" id="stretchingMessage" onclick="location.href='stretching2.html';">You’ve selected:<br>Stretching</div>
+        <script>
+            function updateStretchingMessage() {
+                document.getElementById('stretchingMessage').innerText = 'Let’s get started.....';
+            }
+            setTimeout(updateStretchingMessage, 3000);
+        </script>
+    </div>
+
+    <!-- Stretching 2 Page -->
+    <div id="stretching2Page" style="display: none;">
+        <div class="corner top-left" onclick="location.href='goodbye.html';">End Activity</div>
+        <div class="corner top-right" id="timerContainer"></div>
+        <script src="circleTimer.js"></script>
+        <script>
+            createCircleTimer(60, '#timerContainer');
+        </script>
+        <div id="gifContainer" class="center-text">
+            <img id="stretchGif" src="images/gif1.gif" alt="Stretching GIF">
+        </div>
+        <div class="bottom-center-text">Perform the stretch as shown by the figure!</div>
+        <script type="text/javascript" src="main.js"></script>
     </div>
 </body>
 </html>
