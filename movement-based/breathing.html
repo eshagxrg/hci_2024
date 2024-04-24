@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<div id="breathingPage" style="display: none;">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+<body id="breathingPage" style="display: none;">
     <div class="corner top-left" onclick="location.href='activityselect.html';">Go Back</div>
     <div class="corner bottom-left" onclick="location.href='index.html';">Go Home</div>
-    <div class="center-text" id="breathingMessage" onclick="location.href='breathing2.html';">You’ve selected:<br>Guided Breathing</div>
+    <div class="center-text" id="message" onclick="location.href='breathing2.html';">You’ve selected:<br>Guided Breathing</div>
+    
     <script>
-        function updateBreathingMessage() {
-            document.getElementById('breathingMessage').innerText = 'Let’s get started.....';
+        function updateMessage() {
+            document.getElementById('message').innerText = 'Let’s get started.....';
         }
-        setTimeout(updateBreathingMessage, 3000);
+        setTimeout(updateMessage, 3000);
     </script>
-</div>
+</body>
+</html>

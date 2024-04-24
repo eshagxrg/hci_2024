@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<div id="stretching2Page" style="display: none;">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+<body id="stretching2Page" style="display: none;">
     <div class="corner top-left" onclick="location.href='goodbye.html';">End Activity</div>
-    <div class="corner top-right" id="stretchingTimerContainer"></div>
+    <div class="corner top-right" id="timerContainer"></div>
     <script src="circleTimer.js"></script>
     <script>
-        createCircleTimer(60, '#stretchingTimerContainer');
+        createCircleTimer(60, '#timerContainer');
     </script>
-    <div class="center-text">Perform the stretch as shown by the figure!</div>
-</div>
+    <div id="gifContainer" class="center-text">
+        <img id="stretchGif" src="images/gif1.gif" alt="Stretching GIF">
+    </div>
+    <div class="bottom-center-text">Perform the stretch as shown by the figure!</div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
